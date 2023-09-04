@@ -27,9 +27,12 @@ public class Passageiro extends BasePessoa{
         this.destino = destino;
     }
     
-    public Passageiro( String documento, String poltrona, String destino)
-     super (codigo, destino, destino, destino, dataNascimento, documento, poltrona, destino);
+    public Passageiro(int codigo, String nome, String email, String contaCorrente, String telefone, 
+    LocalDate dataNascimento, String usuario, String senha, String registro, String cracha, String documento,
+    String poltrona, String destino) {
+     super (codigo, nome, email, telefone, dataNascimento, contaCorrente, usuario, senha);
      this.documento = documento;
      this. poltrona = poltrona;
      this.destino = destino;
+    }
 }
